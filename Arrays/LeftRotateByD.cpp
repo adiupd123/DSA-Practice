@@ -26,7 +26,7 @@ void leftRotateByD(int arr[], int n, int d){
     // for(int i=n-d;i<n;i++)
     //     arr[i] = t[i-(n-d)];
     /**
-     * @brief Approach 3: Second Optimisation
+     * @brief Approach 3: Second Optimisation(Reversal Algorithm / Block swap Algorithm)
      * Time Complexity: O(n)
      * Space Complexity: O(1) 
      */
