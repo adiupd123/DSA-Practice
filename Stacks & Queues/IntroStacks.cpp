@@ -11,22 +11,22 @@ public:
     Stack(){
         this->top = -1;
     }
-    bool push(int x){
+    void push(int x){
         if(top>=MAX-1){
             cout<<"Stack Overflow"<<endl;
-            return false;
+            return;
         } else{
             top++;
             st[top] = x;
-            return true;
         }
     }
     int pop(){
         if(top==-1){
             cout<<"Stack Underflow"<<endl;
             return 0;
-        } else{
+        } else{    
             int x = st[top--];
+            st[top] = INT_MIN;
             return x;
         }
     }
