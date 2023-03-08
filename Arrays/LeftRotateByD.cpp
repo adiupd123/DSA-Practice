@@ -35,6 +35,8 @@ void leftRotateByD(int arr[], int n, int d){
     reverse(arr+d, arr+n);
     reverse(arr, arr+n);
 }
+// Input:  1 2 3 4 5 6
+// Output: 3 4 5 6 1 2
 int main()
 {
     int n, d;
